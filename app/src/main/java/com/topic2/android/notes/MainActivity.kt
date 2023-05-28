@@ -34,6 +34,7 @@ class MainActivity : AppCompatActivity() {
     )
   })
 
+  @OptIn(ExperimentalMaterialApi::class)
   @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
