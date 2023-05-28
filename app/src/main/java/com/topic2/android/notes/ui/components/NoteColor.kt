@@ -23,10 +23,10 @@ fun NoteColor(
     size: Dp,
     border: Dp
 ){
-    Box(modifier = Modifier
-        .size(40.dp)
+    Box(modifier = modifier
+        .size(size)
         .clip(CircleShape)
-        .background(Color.Red)
+        .background(color)
         .border(
             BorderStroke(
                 border,
