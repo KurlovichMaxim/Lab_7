@@ -134,8 +134,7 @@ private fun LightDarkThemeItem(){
 @Composable
 fun AppDrawer(
     currentScreen: Screen,
-    closeDrawerAction: () -> Unit,
-    function: () -> Unit
+    closeDrawerAction: () -> Unit
 ) {
     Column(modifier = Modifier.fillMaxSize()) {
         AppDrawerHeader()
@@ -194,7 +193,7 @@ private fun LightDarkThemeItemPreview(){
 @Composable
 fun AppDrawerPreview(){
     NotesTheme {
-        AppDrawer(Screen.Notes, {}){
+        AppDrawer(Screen.Notes){
         }
     }
 }
